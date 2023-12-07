@@ -1,5 +1,9 @@
 h1 {
     text-align: center;
     font-family: "Comic Sans MS", sans-serif;
+    margin-block: 2vh;
 }
 
+p {
+    font-family: "Helvetica", sans-serif;
+}

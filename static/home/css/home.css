@@ -13,7 +13,8 @@ body {
     background-image: url("/static/home/images/type-writer.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-size: cover;
+    background-position: top;
     flex-direction: column;
 }
 
@@ -26,6 +27,10 @@ body {
 .wrapper p {
     color: #cccaca;
     font-family: Arial, fantasy;
-    font-size: 1.1rem;
-    text-shadow: 0 0 2px black;
+    font-size: 1.3rem;
+    text-shadow: 0 0 3px black;
+    background-color: rgba(0, 0, 0, 0.29);
+    padding: .5rem;
+    border-radius: .5rem;
+    backdrop-filter: blur(5px);
 }
