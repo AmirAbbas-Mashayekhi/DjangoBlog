@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block external_links %}
+    <link rel="stylesheet" href="{% static 'blogs/css/blog_detail.css' %}">
+{% endblock %}
+{% block title %}
+    {{ blog.title }}
+{% endblock %}
+{% block content %}
+    <h1>{{ blog.title }}</h1>
+    <div class="container">
+        <p>{{ blog.text }}</p>
+        <hr>
+        <footer>
+            <p><em>{{ blog.created_at }}</em></p>
+            <p><strong>{{ blog.author_id }}</strong></p>
+        </footer>
+    </div>
+{% endblock %}
