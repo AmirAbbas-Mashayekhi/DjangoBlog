@@ -7,34 +7,7 @@ h1 {
 .card {
     position: relative;
     display: block;
-}
-
-.glowing::before {
-    border-radius: .5rem;
-    content: '';
-    position: absolute;
-    left: -1px;
-    top: -1px;
-    background: linear-gradient(45deg, #ff80a2, #ff6600d9, #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, #ff3300de, #5aabde);
-    background-size: 400%;
-    width: calc(100% + 5px);
-    height: calc(100% + 5px);
-    z-index: -1;
-    animation: glower 90s linear infinite;
-}
-
-@keyframes glower {
-    0% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 400% 0;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 .cards-wrapper {

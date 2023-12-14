@@ -19,12 +19,12 @@
     <div class="cards-wrapper container">
         {% for blog in blogs %}
 
-            <div class="card glowing" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">{{ blog.title }}</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">{{ blog.author_id }}</h6>
                     <p class="card-text">{{ blog.created_at }}</p>
-                    <a href="{% url 'blog_info' blog.id %}" class="btn btn-outline-dark">Read</a>
+                    <a href="{% url 'blog_info' blog.id %}" class="btn btn-sm btn-info">Read</a>
                 </div>
             </div>
         {% endfor %}
