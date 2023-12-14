@@ -28,7 +28,7 @@ class DatabaseTest(TestCase):
             email='test@gmail.com',
             password='1234'
         )
-        Blog.objects.create(
+        self.blog = Blog.objects.create(
             title='Test Blog',
             text='lorem ipsum dolor sit amet.',
             author=Author.objects.get(user_name='test'),
@@ -36,5 +36,5 @@ class DatabaseTest(TestCase):
         )
 
     def test_blog_details_page(self):
-        response = self.client.get('/blogs/1')
+        response = self.client.get(reverse('blog_info', args=[self.blog.id]))
         self.assertEquals(response.status_code, 200)
