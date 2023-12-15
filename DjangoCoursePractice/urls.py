@@ -21,6 +21,6 @@ from . import views
 urlpatterns = [
     path('', views.home_page, name='home_page'),
     path('admin/', admin.site.urls),
+    path("__debug__/", include("debug_toolbar.urls")),
     path('blogs/', include('blogs.urls')),
 ]
-
