@@ -15,6 +15,7 @@ h1 {
     flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 5vh;
+    justify-content: center;
 }
 
 .card-title {
